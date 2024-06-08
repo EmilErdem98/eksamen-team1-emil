@@ -7,46 +7,37 @@ import Footer from '../components/Footer.astro';
 import Medlemsfordele from "../components/Medlemsfordele.astro";
 ---
 <MainLayout>
-	<!-- Baggrund  -->
-    <!-- <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/bg3tester.webp');" ></div> -->
-    
-    <!-- Ændring af baggrund, billede optimeret og alt tekst -->
-    <div class="absolute inset-0">
-        <img src="/bg3tester.webp" alt="Dansk mark bakker tåge og solen er på vej ned" class="object-cover w-full h-full">
-    </div>
-    
-    
-		
-		<!-- Section-1 -->
-        <!-- Grid -->
-    <div class=" flex items-center min-h-screen ">
-        <div class="container mx-auto">
-            <div class="md:grid md:grid-cols-2 gap-0 place-items-center">
-    
-        <!-- H1-overskrift -->
-                <div class="z-10 md:ml-20 m-10 mt-24">
-                    <div class="text-white font-Lato ">
-                        <h1 class="md:text-5xl text-xl font-bold mb-8 leading-normal">Velkommen til <br> Danmarks Naturfredningsforening</h1>
-                        <h3 class="text-base font-extralight md:text-2xl leading-loose">Naturen og klimaet er under pres, men sammen kan vi stadig nå at vende udviklingen. Bliv medlem eller giv et bidrag og vær med til at skabe grøn forandring nu!</h3>
-                    </div>
+
+
+<div class="flex items-center min-h-screen">
+    <img src="/bg3tester.webp" alt="Baggrund forside" class="absolute inset-0 object-cover w-full h-full z-0">
+    <div class="container mx-auto relative z-10">
+        <div class="md:grid md:grid-cols-2 gap-0 place-items-center">
+            <div class="z-20 md:ml-20 m-10 pt-10 md:mt-32">
+                <div class="text-white font-Lato">
+                    <h3 class="md:text-3xl text-xl font-bold mb-8 leading-normal">Velkommen til <br> Danmarks Naturfredningsforening</h3>
+                    <p class="font-extralight md:text-2xl leading-loose">
+                        Naturen og klimaet er under pres, men sammen kan vi stadig nå at vende udviklingen. Bliv medlem eller giv et bidrag og vær med til at skabe grøn forandring nu!
+                    </p>
                 </div>
-                
-        <!-- Formular -->
+            </div>
             
-                <FormMedlem  fom="Bliv Medlem"> </FormMedlem>     
+            <!-- Formular -->
+            <FormStot fos="Giv et Bidrag"></FormStot>
         </div>
     </div>
 </div>
+
     
     <!-- Section-2 -->
     <div class="flex items-center justify-center min-h-screen">
         <div class="relative w-full h-full flex flex-col-reverse md:flex-row">
             
-            <!-- <div class="bg-cover bg-center w-full md:w-1/2 h-64 md:h-screen" style="background-image: url('/sec2tester.webp');"></div> -->
+            <div class="bg-cover bg-center w-full md:w-1/2 h-64 md:h-screen" style="background-image: url('/sec2tester.webp');"></div>
             
-            <div class="w-full md:w-1/2 h-64 md:h-screen">
+            <!-- <div class="w-full md:w-1/2 h-64 md:h-screen">
                 <img src="/sec2tester.webp" alt="to insekter på en blomst der grøn, insekterne har forskellige farver" class="object-cover w-full h-full">
-            </div>
+            </div> -->
             
 
 
