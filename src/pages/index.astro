@@ -3,12 +3,13 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import FormMedlem from '../components/FormMedlem.astro';
 import FormStot from '../components/FormStot.astro';
+import CardsForside from '../components/CardsForside.astro';
 import Footer from '../components/Footer.astro';
 import Medlemsfordele from "../components/Medlemsfordele.astro";
 ---
 <MainLayout>
 
-
+<!-- Forside -->
 <div class="flex items-center min-h-screen">
     <img src="/bg3tester.webp" alt="Baggrund forside" class="absolute inset-0 object-cover w-full h-full z-0">
     <div class="container mx-auto relative z-10">
@@ -38,44 +39,17 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
             <!-- <div class="w-full md:w-1/2 h-64 md:h-screen">
                 <img src="/sec2tester.webp" alt="to insekter på en blomst der grøn, insekterne har forskellige farver" class="object-cover w-full h-full">
             </div> -->
+
             
-
-
-
+            
             <div class="relative w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center md:pl-32">
                 <div class="flex flex-col md:flex-row md:absolute md:transform md:-translate-x-1/4 space-y-0 md:space-x-5 ">
-                    
-                    <div class="bg-guld100 md:bg-lysebrun100 md:rounded-lg shadow-lg p-5 h-100 w-100 md:h-100 flex flex-col items-center text-center ">
-                        <div class="p-4 mb-4">
-                            <img src="vandicon.svg" alt="Ikon" class="w-16 h-16">
-                        </div>
-                        <h2 class="text-xl text-blå500 font-bold font-Lato mb-2">Mere liv i havet</h2>
-                        <p class="text-blå500 font-Lato leading-loose">
-                            Vi arbejder for mere liv i danske have og for at beskytte 30% af havet omkring Danmark i tråd med FN's Biodiversitetskonvention.
-                        </p>
-                    </div>
 
-                    
-    
-                    <div class="bg-guld200 md:bg-lysebrun100  md:rounded-lg shadow-lg p-5  h-100 w-100 md:h-100 flex flex-col items-center text-center ">
-                        <div class="p-4 mb-4">
-                            <img src="gifticon.svg" alt="Ikon" class="w-16 h-16">
-                        </div>
-                        <h2 class="text-xl text-blå500 font-bold font-Lato mb-2">Mere liv i havet</h2>
-                        <p class="text-blå500 font-Lato leading-loose">
-                            Vi arbejder for at beskytte drikke-vandet ved at forbyde pesticider og gift i grundvandsområder og ved drikkevandsboringer.
-                        </p>
-                    </div>
-    
-                    <div class="bg-guld300 md:bg-lysebrun100 md:rounded-lg shadow-lg p-5 h-100 w-100 md:h-100 flex flex-col items-center text-center ">
-                        <div class="p-4 mb-4">
-                            <img src="skraldicon.svg" alt="Ikon" class="w-16 h-16">
-                        </div>
-                        <h2 class="text-xl text-blå500 font-bold font-Lato mb-2 ">Mere liv i havet</h2>
-                        <p class="text-blå500 font-Lato leading-loose">
-                            Vi arbejder for et affaldsfrit Danmark inden 2050 og for at stoppe brug-og-smid-væk-kulturen for at beskytte klimaet og naturen.
-                        </p>
-                    </div>
+                    <CardsForside imageUrl="vandicon.svg" overskrift="Mere liv i havet" tekst="Vi arbejder for mere liv i danske have og for at beskytte 30% af havet omkring Danmark i tråd med FN's Biodiversitetskonvention."></CardsForside>
+
+                    <CardsForside imageUrl="gifticon.svg" overskrift="Beskyt drikkevandet" tekst=" Vi arbejder for at beskytte drikke-vandet ved at forbyde pesticider og gift i grundvandsområder og ved drikkevandsboringer."></CardsForside>
+
+                    <CardsForside imageUrl="skraldicon.svg" overskrift="Danmark uden affald" tekst=" Vi arbejder for et affaldsfrit Danmark inden 2050 og for at stoppe brug-og-smid-væk-kulturen for at beskytte klimaet og naturen."></CardsForside>
                     
                 </div>
             </div>
