@@ -15,7 +15,7 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
         <div class="md:grid md:grid-cols-2 gap-0 place-items-center">
             <div class="z-20 md:ml-20 m-10 pt-10 md:mt-32">
                 <div class="text-white font-Lato">
-                    <h3 class="md:text-3xl text-xl font-bold mb-8 leading-normal">Velkommen til <br> Danmarks Naturfredningsforening</h3>
+                    <h3 class="md:text-5xl text-xl font-bold mb-8 leading-normal">Velkommen til <br> Danmarks Naturfredningsforening</h3>
                     <p class="font-extralight md:text-2xl leading-loose">
                         Naturen og klimaet er under pres, men sammen kan vi stadig nå at vende udviklingen. Bliv medlem eller giv et bidrag og vær med til at skabe grøn forandring nu!
                     </p>
@@ -23,7 +23,7 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
             </div>
             
             <!-- Formular -->
-            <FormStot fos="Giv et Bidrag"></FormStot>
+            <FormMedlem fom="Bliv Medlem"></FormMedlem>
         </div>
     </div>
 </div>
@@ -111,22 +111,24 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
     <Medlemsfordele></Medlemsfordele>
     
         <!-- Section-5 -->
-        <div class="flex items-center min-h-screen bg-[url('/bidrag.webp')] bg-cover bg-center">
-            <div class="container mx-auto">
+        <div class="relative flex items-center min-h-screen">
+            <img src="/bidragtester.webp" alt="En familie som går igennem naturen" class="absolute inset-0 object-cover w-full h-full z-0">
+            <div class="container mx-auto relative z-10">
                 <div class="md:grid md:grid-cols-2 gap-0 place-items-center">
-        
                     <div class="z-10 md:ml-20 m-10 pt-10 md:mt-32">
-                        <div class="text-white font-Lato ">
-                            <h3 class="md:text-3xl text-xl font-bold mb-8 leading-normal">Giv et bidrag til naturen</h3>
+                        <div class="text-white font-Lato">
+                            <h3 class="md:text-5xl text-xl font-bold mb-8 leading-normal">Giv et bidrag til naturen</h3>
                             <p class="font-extralight md:text-2xl leading-loose">Vores danske natur er hårdt presset, men sammen kan vi stadig nå at vende udviklingen. Giv naturen en gave fra dig. Du vælger selv, hvor meget du vil donere - og du kan få fradrag.</p>
                         </div>
                     </div>
                     
                     <!-- Formular -->
-                   <FormStot fos="Giv et Bidrag"> </FormStot>
+                    <FormStot fos="Giv et Bidrag"></FormStot>
                 </div>
             </div>
         </div>
+        
+          
 
         <!-- section-6 -->
         <div class="md:grid grid-cols-2 gap-0 h-screen text-left">
