@@ -10,9 +10,9 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
 <MainLayout>
 
 <!-- Forside -->
-<section class="flex items-center min-h-screen">
+<section class="flex items-center justify-center min-h-screen">
     <img src="/bg3tester.webp" alt="Baggrund forside" class="absolute inset-0 object-cover w-full h-full z-0" loading="lazy" >
-    <div class="container mx-auto relative z-10">
+    <div class="z-10">
         <div class="md:grid md:grid-cols-2 gap-0 place-items-center">
             <div class="md:ml-20 m-10 pt-10 md:mt-32">
                 <div class="text-white font-Lato">
@@ -34,16 +34,14 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
     <section class="flex items-center justify-center min-h-screen">
         <div class="relative w-full h-full flex flex-col-reverse md:flex-row">
             
-            <div class="bg-cover bg-center w-full md:w-1/2 h-64 md:h-screen" style="background-image: url('/sec2tester.webp');" loading="lazy"></div>
+            <!-- <div class="bg-cover bg-center w-full md:w-1/2 h-64 md:h-screen" style="background-image: url('/sec2tester.webp');" loading="lazy"></div> -->
             
-            <!-- <div class="w-full md:w-1/2 h-64 md:h-screen">
-                <img src="/sec2tester.webp" alt="to insekter på en blomst der grøn, insekterne har forskellige farver" class="object-cover w-full h-full">
-            </div> -->
+            <div class="md:w-1/2  md:h-screen">
+                <img src="/sec2tester.webp" alt="to insekter på en blomst der grøn, insekterne har forskellige farver" class="object-cover w-full h-full" loading="lazy">
+            </div>
 
-            
-            
-            <div class="relative w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center md:pl-32">
-                <div class="flex flex-col md:flex-row md:absolute md:transform md:-translate-x-1/4 space-y-0 md:space-x-5 ">
+            <div class="relative w-full md:w-1/2 flex items-center ">
+                <div class="flex flex-col md:flex-row md:absolute  md:-translate-x-1/4 space-y-0 md:space-x-5 ">
 
                     <CardsForside imageUrl="vandicon.svg" overskrift="Mere liv i havet" tekst="Vi arbejder for mere liv i danske have og for at beskytte 30% af havet omkring Danmark i tråd med FN's Biodiversitetskonvention."></CardsForside>
 
@@ -58,18 +56,15 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
     
     <!-- Section-3 -->
     
-    <section class="md:grid grid-cols-2 gap-0 h-screen text-left">
+    <section class="md:grid grid-cols-2 gap-0 text-left">
         <!-- Venstre side med h3 og tekst -->
-        <div class=" font-Lato text-blå500 flex flex-col items-left justify-center bg-guld50 md:p-20 p-10">
+        <div class=" font-Lato text-blå500  bg-guld50 md:p-20 p-10">
             <h3 class="md:text-3xl text-xl font-bold mb-8 leading-normal">Vi arbejder for en rigere natur, et rent miljø og en bæredygtig fremtid</h3>
           
             <p class="text-lg leading-loose ">
                 Danmarks Naturfredningsforening er landets største grønne organisation med over 135.000 medlemmer og 1.500 frivillige. Vi arbejder for at bevare Danmarks natur og kan som de eneste rejse fredningssager. Vores indsats har allerede sikret, at cirka fem procent af Danmarks areal er fredet.
             </p>
-            <!-- <button type="submit" class="bg-gul500 shadow-lg  text-blå500 font-Lato font-semibold py-2 px-4 rounded-3xl w-48 mt-10 flex items-center justify-center">
-                <img src="/button.svg" alt="ikon" class="h-5 w-5 mr-2">
-                Læs mere her
-            </button> -->
+            
             <div class="mt-10">
                 <Button variant="primary" size="medium" type="submit" id="submit" name="submit">Læs mere her</Button>
             </div>
@@ -78,16 +73,16 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
     
         <!-- Højre side med video -->
         <div class="flex items-center justify-center bg-guld50">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/339964997?h=7d6f930047" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/339964997?h=7d6f930047" width="640" height="360" frameborder="0" allowfullscreen loading="lazy"></iframe>
         </div>
     </section>
 
     <Medlemsfordele></Medlemsfordele>
     
         <!-- Section-5 -->
-        <section class="relative flex items-center min-h-screen">
+        <section class="relative flex items-center h-screen">
             <img src="/bidragtester.webp" alt="En familie som går igennem naturen" class="absolute inset-0 object-cover w-full h-full z-0" loading="lazy">
-            <div class="container mx-auto relative z-10">
+            <div class="z-10">
                 <div class="md:grid md:grid-cols-2 gap-0 place-items-center">
                     <div class="z-10 md:ml-20 m-10 pt-10 md:mt-32">
                         <div class="text-white font-Lato">
