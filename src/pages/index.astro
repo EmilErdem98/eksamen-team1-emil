@@ -9,7 +9,7 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -27,14 +27,15 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
     <img src="/bg3tester.webp" alt="Baggrund forside" class="absolute inset-0 object-cover w-full h-full z-0" loading="lazy" >
     <div class="z-10">
         <div class="md:grid md:grid-cols-2 gap-0 place-items-center">
-            <div class="md:ml-20 m-10 pt-10 md:p-10 md:mt-32">
+            <div class="md:ml-40 pt-24 p-10 md:p-2 md:mt-32">
                 <div class="text-white font-Lato">
                     <h3 class="md:text-5xl text-xl font-bold mb-5 md:mb-8 md:leading-tight">Velkommen til <br> Danmarks Naturfredningsforening</h3>
-                    <p class="font-extralight md:text-2xl md:leading-normal">
+                     <p class="font-extralight md:text-2xl md:leading-normal">
                         Naturen og klimaet er under pres, men sammen kan vi stadig nå at vende udviklingen. Bliv medlem eller giv et bidrag og vær med til at skabe grøn forandring nu!
                     </p>
                 </div>
             </div>
+        
             
             <!-- Formular -->
             <FormMedlem fom="Bliv Medlem"></FormMedlem>
@@ -97,7 +98,7 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
             <img src="/bidragtester.webp" alt="En familie som går igennem naturen" class="absolute inset-0 object-cover w-full h-full z-0" loading="lazy">
             <div class="z-10">
                 <div class="md:grid md:grid-cols-2 gap-0 place-items-center">
-                    <div class="z-10 md:ml-20 m-10 md:p-10 pt-10 md:mt-32">
+                    <div class="md:ml-40 p-10 md:p-2 md:mt-32">
                         <div class="text-white font-Lato">
                             <h3 class="md:text-5xl text-xl font-bold mb-5 md:mb-8 md:leading-tight">Giv et bidrag til naturen</h3>
                             <p class="font-extralight md:text-2xl md:leading-normal">Vores danske natur er hårdt presset, men sammen kan vi stadig nå at vende udviklingen. Giv naturen en gave fra dig. Du vælger selv, hvor meget du vil donere - og du kan få fradrag.</p>
@@ -113,16 +114,16 @@ import Medlemsfordele from "../components/Medlemsfordele.astro";
           
 
         <!-- section-6 -->
-        <section class="md:grid grid-cols-2 gap-0 h-screen text-left">
+        <section class="md:grid grid-cols-2 gap-0 text-left bg-blå400">
             <!-- Venstre side med h3 og tekst -->
-            <div class="font-Lato text-white flex flex-col items-center justify-center bg-blå400 md:p-20 p-10">
-                <h3 class="md:text-3xl text-xl font-bold mb-8 leading-normal">Vi arbejder for naturen, en bæredygtig fremtid og et klima i balance</h3>
-                <p class="text-lg leading-loose">
+            <div class="font-Lato text-white flex flex-col items-center justify-center md:p-20 p-10">
+                <h3 class="md:text-3xl text-xl font-bold mb-8 leading-normal md:ml-20">Vi arbejder for naturen, en bæredygtig fremtid og et klima i balance</h3>
+                <p class="text-lg leading-loose md:ml-20">
                     Naturen har brug for hjælp, fordi mange naturområder risikerer at gro til og miste deres unikke levesteder. Du kan bidrage ved at deltage i Danmarks Naturfredningsforenings naturplejeprojekter og lære, hvordan du plejer naturen lokalt. Meld dig ind i foreningens netværk for at udveksle viden og erfaringer med andre naturplejeentusiaster.​ 
                 </p>
             </div>
         
-            <div class="relative overflow-hidden bg-blå400">
+            <div class="relative overflow-hidden md:w-2/3 md:justify-self-center ">
                 <img src="infog.svg" alt="info grafik" class="w-full h-full ">
             </div>
         </section>
