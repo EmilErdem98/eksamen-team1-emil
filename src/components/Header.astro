@@ -50,14 +50,14 @@
                 <nav id="desktopmenu" class="hidden lg:block z-10 font-Lato pt-8 pr-5"
                      :class="{ 'text-white': !scrolled, 'text-blå500': scrolled }">
                     <ul class="flex flex-row gap-14">
-                        <li x-show="!isHomePage" class="group-hover:text-blå500"><a href="/">Forside</a></li>
-                        <li class="group-hover:text-blå500"><a href="/listview">Vi arbejder for</a></li>
-                        <li class="group-hover:text-blå500"><a href="/omos">Om os</a></li>
-                        <li class="group-hover:text-blå500"><a href="/">Oplev naturen</a></li>
-                        <li class="group-hover:text-blå500"><a href="/">Bliv frivillig</a></li>
-                        <li class="group-hover:text-blå500"><a href="/">Afdelinger</a></li>
-                        <li class="group-hover:text-blå500"><a href="/">Nyheder</a></li>
-                        <li class="group-hover:text-blå500"><a href="/">Arrangementer</a></li>
+                        <li x-show="!isHomePage" class=""><a href="/">Forside</a></li>
+                        <li class="text-xl"><a href="/listview">Vi arbejder for</a></li>
+                        <li class="text-xl"><a href="/omos">Om os</a></li>
+                        <li class="text-xl"><a href="/">Oplev naturen</a></li>
+                        <li class="text-xl"><a href="/">Bliv frivillig</a></li>
+                        <li class="text-xl"><a href="/">Afdelinger</a></li>
+                        <li class="text-xl"><a href="/">Nyheder</a></li>
+                        <li class="text-xl"><a href="/">Arrangementer</a></li>
                     </ul>
                 </nav>
                 <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
